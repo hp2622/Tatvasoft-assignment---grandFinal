@@ -4,6 +4,11 @@ let downArrow = document.querySelector("#down-arrow");
 
 let leftSidebar = document.querySelector(".left--sidebar");
 
+let closeArrow = document.querySelector("#close-arrow");
+
+
+let rightNavigation = document.querySelector(".right-navigation");
+
 
 
 menuIcon.addEventListener("click", () => {
@@ -17,4 +22,9 @@ menuIcon.addEventListener("click", () => {
         leftSidebar.classList.remove('close');
         leftSidebar.classList.add('open');
     }
+})
+
+closeArrow.addEventListener("click", () => {
+    rightNavigation.classList.toggle("display-none");
+    
 })
